@@ -52,7 +52,7 @@ export const UpdateProfile = () => {
       if (updatedUser?.data?.user) {
         setUser(updatedUser?.data?.user);
       }
-      toast.success('Updated user');
+      toast.success('Updated user', {id: "updated-user"});
     } catch ({ error }: any) {
       toast.error('Something went wrong', {
         description: error.message
